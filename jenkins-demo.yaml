@@ -1,0 +1,18 @@
+jenkins:
+  systemMessage: "Jenkins CasC\n\n"
+tool:
+  git:
+    installations:
+      - name: git
+        home: /usr/local/bin/git
+
+credentials:
+  system:
+    domainCredentials:
+      - credentials:
+          - usernamePassword:
+              scope: GLOBAL
+              id: git
+              username: user321
+              password: 12345678
+              description: "Git credentials"
